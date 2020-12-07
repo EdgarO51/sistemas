@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <tittle>Registro de datos</tittle>
+
+ <style>
+
+ </style>
+
+</head>
+
+<body>
+
+ <h1>Registro para nuevo socio</h1>
+ <hr/>
+ <form>
+  <label>Nombre</label><br/>
+   <input type="text" name ="nomb" /><br/>
+  <label>Correo</label><br/>
+   <input type="email" name="correo"/><br/>
+  <label>Edad</label><br/>
+   <input type="number" min="15" max="100" name="edad"/><br/>
+  <label>Genero</label><br/>
+   <input type="radio" name="sexo" value="m"/>Masculino
+   <input type="radio" name="sexo" value="f"/>Femenino
+  <br/>
+  <label>Estudios</label><br/>
+   <input type="checkbox" name"Estudios[]"value="prim"/>Primaria<br/>
+   <input type="checkbox" name"Estudios[]"value="sec"/>Secundaria<br/>
+   <input type="checkbox" name"Estudios[]"value="prepa"/>Bachiller<br/>
+   <input type="checkbox" name"Estudios[]"value="lic"/>Licenciatura<br/>
+  <label>Fecha de nacimiento</label><br/> 
+   <input type="date" name="fechNac"/><br/>
+  <label>Teléfono</label><br/>
+   <input type="tel" name"telef"/><br/>
+  <label>Lugar de nacimiento</label><br/>
+   <select name="ciudad">
+    <option value="Aguascalientes">Aguascalientes</option>
+    <option value="bajacalif">Baja California</option>
+    <option value="durango">Durango</option>
+    <option value="sanluispotosi">San Luis Potosí</option>
+    <option value="zacatecas">zacatecas</option>
+    </select><br/>
+  <label>Escriba su comentario</label><br/>
+   <textarea name="comentario" rows="15" cols="30">
+   </textarea><br/>
+   <input type="reset" value="Borrar datos"/>
+   <input type="submit" value="Registrar"/><br/>
+ </form>
+
+
+</body>
+
+</html>
